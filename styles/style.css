@@ -73,3 +73,30 @@ ol {
   object-fit: cover;
   object-position: center;
 }
+
+/* search form */
+.search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content__details {
+  inline-size: 100%;
+  block-size: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.title {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+  padding-block-start: 3px;
+}
