@@ -52,13 +52,38 @@ ol {
   padding: 266px 30px;
 }
 
-
-
 /* searchform */
 .search-form {
   width: 711px;
   height: 54px;
 } 
+
+/* search menu */ 
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 0;
+}
+
+/* search menu title*/ 
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+/* search menu city search field*/ 
+.search-form__textfield {
+  color: rgba(255, 255, 255, 0.70);
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 
 /* video and container */
 .result__video-container {
@@ -82,6 +107,7 @@ ol {
   align-items: center;
 }
 
+/* block content detail*/
 .content__details {
   inline-size: 100%;
   block-size: 100%;
@@ -90,6 +116,7 @@ ol {
   gap: 22px;
 }
 
+/* title h1 */
 .title {
   color: #fff;
   font-family: "Oswald", sans-serif;
@@ -99,4 +126,10 @@ ol {
   line-height: 94%;
   text-transform: uppercase;
   padding-block-start: 3px;
+}
+
+.search-form__label:hover > .search-form__label-text:not(.visually-hidden),
+.button:hover,
+.content__card-link:hover .content__video-card-description-container {
+  text-decoration: underline;
 }
