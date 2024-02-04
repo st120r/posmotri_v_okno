@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -16,6 +17,10 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+
+  justify-content: center;
+  align-items: center;
+
 }
 
 h1,
@@ -36,3 +41,30 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+}
+
+.search-form {
+  width: 711px;
+  height: 54px;
+} 
+
