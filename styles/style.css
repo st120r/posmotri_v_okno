@@ -42,6 +42,19 @@ ol {
   list-style: none;
 }
 
+/* hide visually hidden */
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+
 /* content block */
 .content {
   inline-size: 1140px;
