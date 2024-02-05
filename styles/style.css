@@ -72,12 +72,18 @@ ol {
 } 
 
 /* search menu */ 
-
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
   gap: 5px;
   border: 0;
+}
+
+/* day time in line */
+.search-form__fieldset:nth-child(2) {
+  block-size: 54px;
+  inline-size: 212px;
+  gap: 7px;
 }
 
 /* search menu title*/ 
@@ -110,6 +116,20 @@ ol {
   padding: 0;
 }
 
+/* color textholder */
+.search-form__textfield::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+/* make daytime in row */
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  inline-size: 212px;
+}
+
 /*button */
 .button {
   cursor: pointer;
@@ -130,6 +150,7 @@ ol {
   line-height: normal;
 }
 
+/* button size*/
 .search-form__submit-button {
   align-self: end;
   inline-size: 194px;
@@ -157,7 +178,7 @@ ol {
   align-items: center;
 }
 
-/* block content detail*/
+/* block content details*/
 .content__details {
   inline-size: 100%;
   block-size: 100%;
@@ -177,10 +198,12 @@ ol {
   text-transform: uppercase;
   padding-block-start: 3px;
 }
+
 .content__accent {
   color: #545050;
 }
 
+/* hide and add scroll */
 .content__list {
   position: relative;
   display: flex;
@@ -190,6 +213,7 @@ ol {
   overflow-y: auto;
 }
 
+/* item size */ 
 .content__list-item {
   display: flex;
   inline-size: 394px;
