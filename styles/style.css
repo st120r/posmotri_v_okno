@@ -65,11 +65,15 @@ ol {
   padding: 266px 30px;
 }
 
-/* searchform */
+/* search form */
 .search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 711px;
   height: 54px;
-} 
+}
 
 /* search menu */ 
 .search-form__fieldset {
@@ -130,6 +134,22 @@ ol {
   inline-size: 212px;
 }
 
+/* make squares for checkbox */
+
+.search-form__pseudo-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  inline-size: 19px;
+  block-size: 19px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-inline-end: 5px;
+
+}
+
 /*button */
 .button {
   cursor: pointer;
@@ -170,13 +190,7 @@ ol {
   object-position: center;
 }
 
-/* search form */
-.search-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 /* block content details*/
 .content__details {
@@ -219,6 +233,25 @@ ol {
   inline-size: 394px;
   align-items: flex-start;
   margin-block-end: 30px;
+}
+
+/* card title link decoration */
+.content__card-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.content__video-card-description-container {
+  
 }
 
 .search-form__label:hover > .search-form__label-text:not(.visually-hidden),
