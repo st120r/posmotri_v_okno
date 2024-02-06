@@ -108,7 +108,6 @@ ol {
   justify-content: start;
   gap: 10px;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -163,7 +162,6 @@ ol {
   background-color: transparent;
   color: #fff;
   text-align: center;
-  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -244,6 +242,7 @@ ol {
   margin: 2px;
 }
 
+/* card */
 .content__video-card {
   display: flex;
   flex-direction: row;
@@ -251,11 +250,104 @@ ol {
 }
 
 .content__video-card-description-container {
-  
+  display: flex;
+  flex-direction: column;
+  inline-size: 200px;
+  gap: 6px;
 }
 
+.content__video-card-title {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.content__video-card-thumbnail {
+  object-fit: cover;
+  object-position: center;
+  inline-size: 194px;
+  block-size: 103px;
+}
+
+
+.content__list-item:last-child {
+  margin-block-end: 0;
+}
+
+/* when choosec item */
+.content__list-item:has(.content__card-link_current) {
+  background-color: #545050;
+}
+
+.more-button {
+  display: flex;
+  inline-size: 399px;
+  margin: 3px;
+}
+
+/* checkbox check */
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: "";
+  display: flex;
+  inline-size: 14px;
+  block-size: 14px;
+  background-color: #fff;
+}
+
+.button:active,
+.content__card-link:active {
+  background-color: #545050;
+}
+
+/* underline when hover*/
 .search-form__label:hover > .search-form__label-text:not(.visually-hidden),
 .button:hover,
 .content__card-link:hover .content__video-card-description-container {
   text-decoration: underline;
+}
+
+.search-form__label:hover {
+  cursor: pointer;
+}
+
+.search-form__textfield:focus,
+.button:focus,
+.content__card-link:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline-color: #fff;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline-color: #fff;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.content__card-link:focus-visible {
+  outline-color: #fff;
+  outline-width: 1px;
+  outline-style: solid;
+}
+
+.search-form__textfield .content__video-card-description .button {
+  font-family: "Fira Sans Condensed", sans-serif;
 }
