@@ -16,7 +16,7 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -150,10 +150,11 @@ ol {
   block-size: 34px;
   gap: 10px;
   flex-shrink: 0;
-  border: 1px solid currentColor;
+  border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
   text-align: center;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -292,7 +293,7 @@ ol {
   content: "";
   display: flex;
   inline-size: 15px;
-  block-size: 14px;
+  block-size: 15px;
   background-color: #fff;
 }
 
@@ -343,7 +344,8 @@ ol {
 }
 
 .search-form__fieldset-title,
-.search-form__label-text {
+.search-form__label-text 
+.button {
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
