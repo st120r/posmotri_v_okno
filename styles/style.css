@@ -309,6 +309,17 @@ ol {
   text-decoration: underline;
 }
 
+.search-form__fieldset-title,
+.search-form__label-text 
+{
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .search-form__label:hover {
   cursor: pointer;
 }
@@ -341,15 +352,4 @@ ol {
 
 .search-form__textfield .content__video-card-description .button {
   font-family: "Fira Sans Condensed", sans-serif;
-}
-
-.search-form__fieldset-title,
-.search-form__label-text 
-.button {
-  color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
