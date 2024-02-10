@@ -92,7 +92,6 @@ ol {
 /* search menu city search field*/
 .search-form__textfield {
   appearance: none;
-  cursor: pointer;
   display: flex;
   inline-size: 225px;
   block-size: 27px;
@@ -109,7 +108,11 @@ ol {
   border-bottom: 1px solid #fff;
   border-right-style: none;
   padding: 0;
-  letter-spacing: -0.8px;
+  font-family: 'Fira Sans Condensed', sans-serif; 
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
 }
 
 /* color textholder */
